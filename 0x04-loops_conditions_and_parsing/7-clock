@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script displays clock
+
+hours=1
+
+while [ $hours -le 12 ]
+do
+	minutes=1
+	while [ $minutes -le 59 ]
+	do
+		echo "$minutes"
+		((minutes++))
+	done
+	echo "Hour: $hours"
+	((hours++))
+done

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# configure hostnames
+cp /etc/hosts ~hosts.bkp
+echo "127.0.0.2 localhost"> ~/hosts.bkp
+echo "8.8.8.8 facebook" >> ~/hosts.bkp
+cp -f ~hosts.bkp /etc/hosts

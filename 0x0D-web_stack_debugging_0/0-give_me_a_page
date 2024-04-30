@@ -1,0 +1,3 @@
+#!/bin/bash
+# Debugging apache2 server
+sudo service apache2 start

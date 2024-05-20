@@ -1,0 +1,21 @@
+
+!includedir /etc/mysql/conf.d/
+!includedir /etc/mysql/mysql.conf.d/
+
+# /etc/mysql/my.cnf or /etc/mysql/mysql.conf.d/mysqld.cnf
+
+[mysqld]
+# Comment out the bind-address parameter
+# bind-address = 127.0.0.1
+
+# Server ID for the primary (must be unique in the replication group)
+server-id = 1
+
+# Enable binary logging for replication
+log_bin = /var/log/mysql/mysql-bin.log
+
+# Set the binlog format to MIXED (can also be ROW or STATEMENT)
+binlog_format = MIXED
+
+# Define the databases to be replicated
+binlog_do_db = tyrell_corp
